@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.boxes {
+  border: 1px solid red;
+}
+
+.box,
+.box2 {
+  width: 500px;
+  height: 500px;
+  margin: 30px;
+  border-radius: 50%;
+  aspect-ratio: 3/4;
+  /* @apply shadow-2xl; */
+}
+
+.box {
+  animation: 1s animate linear;
+  animation-timeline: view();
+  animation-range: entery 0;
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+    scale: 0.5;
+    transform: translateX(-250px);
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(400px);
+  }
+}
+
+.box2 {
+  animation: 1s animate2 linear;
+  animation-timeline: view();
+  animation-range: entery 0% cover 30%;
+}
+
+@keyframes animate2 {
+  from {
+    opacity: 0;
+    scale: 0.5;
+    transform: translateX(250px);
+    /* clip-path: inset(100% 100% 0 0); */
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(-400px);
+    /* clip-path: inset(0 0 0 0); */
+  }
+}
+
+/* .projectBtn {
+  @apply bg-blue-500 px-4 py-2 rounded-3xl text-white font-medium
+} */
+
+.card:hover .content {
+  @apply h-[192px] p-4 z-0 opacity-100;
+}
+
+.cardBefore::before {
+  position: absolute;
+  content: "Coming soon..";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  top: 0;
+  left: 0;
+  width: 102%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  @apply rounded-3xl z-10;
+}
+
+.content {
+  transition: 0.5s;
+}
+
+.msgIcon {
+  transition: 0.4s;
+}
+
+.star,
+.earth {
+  animation: 3s animate linear infinite;
+}
+
+.earth {
+  filter: drop-shadow(-20px 0px 1.75rem #add3fe);
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.banner_title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.marquee_title {
+  animation: marquee 3s linear infinite;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  -webkit-animation: marquee 3s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(12%);
+    -webkit-transform: translateX(12%);
+    -moz-transform: translateX(12%);
+    -ms-transform: translateX(12%);
+    -o-transform: translateX(12%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 920px) {
+  .aboutCardContainer {
+    @apply grid grid-cols-2;
+  }
+}
+
+#footer-b {
+  background: url("../public/footer.png");
+  background-size: cover;
+  background-position: 0px -80px;
+}
+
+
+/* ====================== Loader ======================== */
+.loader-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
