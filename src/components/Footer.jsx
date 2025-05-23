@@ -8,8 +8,8 @@ const Footer = () => {
           {/* About Section */}
           <div>
             <h2 className="text-lg font-semibold">About Me</h2>
-            <p className="text-gray-400 mt-2">
-              I&apos;m a passionate Frontend Developer with a knack for creating
+            <p className="text-justify text-gray-400 mt-2">
+              I&apos;m a passionate FullStack Developer with a knack for creating
               seamless user experiences. I specialize in building responsive web
               designs and interactive applications.
             </p>
@@ -45,16 +45,16 @@ const Footer = () => {
                   href="mailto:kausarrkhan83@gmail.com"
                   className="hover:text-white"
                 >
-                  kausarrkhan83@gmail.com
+                  ishansiddiqui011@gmail.com
                 </a>
               </li>
               <li className="text-gray-400">
                 Phone:{" "}
-                <a href="tel:9260952373" className="hover:text-white">
-                  +919260952373
+                <a href="tel:7254030390" className="hover:text-white">
+                  +917254030390
                 </a>
               </li>
-              <li className="text-gray-400">Location: New Delhi, India</li>
+              <li className="text-gray-400">Location: Hyderabad, India</li>
             </ul>
           </div>
         </div>
@@ -64,7 +64,7 @@ const Footer = () => {
             <SocialLinks color="text-gray-400" linkGap="gap-3" myHover="hover:text-white" />
           </div>
           <p className="mt-6 md:mt-0 text-gray-400">
-            &copy; 2024 Kausar Khan. All rights reserved.
+            &copy; 2025 Ishan. All rights reserved.
           </p>
         </div>
       </div>

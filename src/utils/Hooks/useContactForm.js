@@ -39,9 +39,9 @@ const useContactForm = () => {
 
     const toastId = toast.loading("Sending message...")
 
-    const serviceId = "service_7lk5e9a";
-    const templateId = "template_mjrgw0k";
-    const publicKey = "YzrpwnVbkkn3FAJr0";
+    const serviceId = "service_gr7ba5n";
+    const templateId = "template_tixjwy4";
+    const publicKey = "iwknI6SCvHbduMVZ1";
 
     emailjs
       .send(

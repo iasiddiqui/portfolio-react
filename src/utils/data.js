@@ -1,34 +1,34 @@
 export const easyProjects = [
   {
-    title: "Build Calculator",
+    title: "Tohfa-Bazar-E-commerce",
     tools: "HTML, CSS and Javascript",
     description:
-      "This calculator is build with fully functionality like real calculator.",
-    banner: "/project-banners/calculator.png",
-    link: "https://kausarkhan-2002.github.io/Iphone-calculator/",
-    repoLink: "https://github.com/KausarKhan-2002/Iphone-calculator",
+      "A mobile responsive sample of E-Commerce Website using HTML, CSS, JavaScript and API's.",
+    banner: "/project-banners/Tohfa-Bazar-E-commerce.png",
+    link: "https://iasiddiqui.github.io/Tohfa-Bazar-E-commerce/",
+    repoLink: "https://github.com/iasiddiqui/Tohfa-Bazar-E-commerce",
     completed: true,
   },
   {
-    title: "Tic Tac Toe Game",
+    title: "Wire-Weight-Calculator",
     tools: "HTML, CSS and Javascript",
     description:
-      "Interesting infastructure as well as local storage to store the id and name of user like real game.",
-    banner: "/project-banners/tic-tac.png",
-    link: "https://kausarkhan-2002.github.io/Tic-Tac-Toe-game/",
-    repoLink: "https://github.com/KausarKhan-2002/Tic-Tac-Toe-game",
+      "this is for wire calculations",
+    banner: "/project-banners/Wire-Weight-Calculator.png",
+    link: "https://iasiddiqui.github.io/Wire-Weight-Calculator/",
+    repoLink: "https://github.com/iasiddiqui/wire-calculator",
     completed: true,
   },
   {
-    title: "To Do List",
+    title: "My Portfolio",
     tools: "HTML, CSS and Javascript",
     description:
-      "it will add a list in form of table according to current time and date.",
+      "This is my personal portfolio ",
     banner:
-      "https://www.amitree.com/wp-content/uploads/2021/08/the-pros-and-cons-of-paper-to-do-lists.jpeg",
-    link: "#",
-    repoLink: "",
-    completed: false,
+      "/project-banners/potfolio-ishan.png",
+    link: "https://iasiddiqui.github.io/Portfolio-new/",
+    repoLink: "https://github.com/iasiddiqui/Portfolio-new",
+    completed: true,
   },
   {
     title: "Product filter and search",
@@ -160,14 +160,15 @@ export const mediumProjects = [
     completed: true,
   },
   {
-    title: "Build Calculator",
-    tools: "HTML, CSS and Javascript",
+    title: "DSA-Tracker",
+    tools: "Javascript, React, Chakra Theme",
     description:
-      "This calculator is build with fully functionality like real calculator.",
+      "This DSA Tracker is for practicing dsa qustion in a order.",
     banner:
-      "https://cdn.vox-cdn.com/thumbor/KYf0JcMdgdNcNHuc0WBjVdYQPok=/0x0:2752x2064/1200x628/filters:focal(1921x1693:1922x1694)/cdn.vox-cdn.com/uploads/chorus_asset/file/25522223/IMG_CF7B8A1AD79A_1.jpeg",
-    link: "#",
-    repoLink: "",
+      "/project-banners/dsa-tracker.png",
+      link:"https://iasiddiqui.github.io/DSA-Tracker/",
+    repoLink: "https://github.com/iasiddiqui/DSA-Tracker",
+    completed: true,
   },
   {
     title: "Tic Tac Toe Game",
