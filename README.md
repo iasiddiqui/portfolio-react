@@ -8,7 +8,7 @@
 ---
 
 <h2>🔗 Live Demo</h2>
-<p>Check out my portfolio live: <a href="https://portfolio-jsg9.onrender.com/" target="_blank">Click Here</a></p>
+<p>Check out my portfolio live: <a href="" target="_blank">Click Here</a></p>
 
 <h2>📌 Features</h2>
 <ul>
@@ -72,7 +72,6 @@ npm run dev
 <h2>📬 Contact Me</h2>
 <p>
   <b>Let's connect and collaborate!</b><br>
-  <a href="https://github.com/KausarKhan-2002?tab=repositories" target="_blank">GitHub</a> • 
-  <a href="https://www.linkedin.com/in/kausar-khan-88299227a/" target="_blank">LinkedIn</a> • 
-  <a href="mailto:kausarrkhan83@gmail.com">Email Me</a>
+  <a href="https://github.com/iasiddiqui/" target="_blank">GitHub</a> • 
+  <a href="https://www.linkedin.com/in/ishan-ahmad-siddiqui/" target="_blank">LinkedIn</a> •
 </p>
