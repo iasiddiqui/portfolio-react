@@ -25,7 +25,7 @@ const Navbar = ({ isToggle }) => {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5, // 60% of section in view
+      threshold: 0.5, // 50% of section in view
     };
 
     const observer = new IntersectionObserver((entries) => {
