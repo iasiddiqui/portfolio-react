@@ -65,11 +65,20 @@ const Header = () => {
           </button>
         </div>
 
-        <div id="logo" className="py-3">
+        {/* <div id="logo" className="py-3">
           <h2 className="text-lg lg:text-3xl font-bold lg:fixed bg-white lg:top-0 lg:w-[100px] lg:h-[50px] lg:shadow-md flex justify-center items-center">
             <span className="text-blue-500">Ishan</span><span className="title"></span>
           </h2>
-        </div>
+        </div> */}
+
+<div id="logo" className="py-3">
+  <img
+    src="public\logo\logo.png" // <-- replace with your actual path
+    alt="Ishan Logo"
+    className="h-10 w-auto lg:fixed bg-white lg:top-0 lg:w-[100px] lg:h-[50px]"
+  />
+</div>
+
 
         <Navbar isToggle={isToggle} />
       </div>
