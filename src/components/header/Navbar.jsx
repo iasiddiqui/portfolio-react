@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import SocialLinks from "../../utils/HOC/SocialLinks";
@@ -11,6 +11,7 @@ const Navbar = ({ isToggle }) => {
     setActiveTitle(headerLink[ind].title);
   };
 
+  // Animate on load
   useGSAP(() => {
     gsap.from(".list_item", {
       opacity: 0,
@@ -18,6 +19,40 @@ const Navbar = ({ isToggle }) => {
       x: 20,
     });
   });
+
+  // Scroll detection
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // 60% of section in view
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const visibleSectionId = entry.target.getAttribute("id");
+          const match = headerLink.find(
+            (link) => link.linkTo === `#${visibleSectionId}`
+          );
+          if (match) {
+            setActiveTitle(match.title);
+          }
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections
+    headerLink.forEach((link) => {
+      const sectionId = link.linkTo.replace("#", "");
+      const sectionEl = document.getElementById(sectionId);
+      if (sectionEl) {
+        observer.observe(sectionEl);
+      }
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div
@@ -36,7 +71,9 @@ const Navbar = ({ isToggle }) => {
                 href={link.linkTo}
                 onClick={() => activeBorderBottom(ind)}
                 className={`${
-                  activeTitle == link.title ? "text-blue-500" : "text-slate-800"
+                  activeTitle === link.title
+                    ? "text-blue-500"
+                    : "text-slate-800"
                 } py-4 inline-block w-full font-bold lg:text-[1.1rem] hover:text-blue-500`}
               >
                 {link.title}

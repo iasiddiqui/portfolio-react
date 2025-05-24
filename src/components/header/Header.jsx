@@ -40,11 +40,20 @@ const Header = () => {
         className="text-sm sm:text-base lg:text-lg py-2 flex flex-col items-center gap-1 sm:flex-row sm:justify-center sm:gap-5 md:justify-end md:pr-20 md:p-3"
         style={{ backgroundColor: "#2d3748", color: "#e2e8f0" }}
       >
-        <button onClick={handleEmail} className="sm:border-r-2 sm:border-slate-500 sm:pr-5 text-slate-300 hover:text-slate-200">
+        <button
+          onClick={handleEmail}
+          className="sm:border-r-2 sm:border-slate-500 sm:pr-5 text-slate-300 hover:text-slate-200"
+        >
           ishansiddiqui011@gmail.com
         </button>
         <h2 className="sm:border-r-2 sm:border-slate-500 sm:pr-5">
-          Call me: <button onClick={handleCall} className="text-blue-500 hover:text-blue-400">+917254030390</button>
+          Call me:{" "}
+          <button
+            onClick={handleCall}
+            className="text-blue-500 hover:text-blue-400"
+          >
+            +917254030390
+          </button>
         </h2>
         <BigScreenSocialLink linkAnimate="other_link" />
       </div>
@@ -71,14 +80,15 @@ const Header = () => {
           </h2>
         </div> */}
 
-<div id="logo" className="py-3">
-  <img
-    src="/logo/logo.png" 
-    alt="Ishan Logo"
-    className="h-10 w-auto lg:fixed bg-white lg:top-0 lg:w-[100px] lg:h-[50px]"
-  />
-</div>
-
+        <div id="logo" className="py-3">
+          <a href="#home">
+            <img
+              src="/logo/logo.png"
+              alt="Ishan Logo"
+              className="h-10 w-auto lg:fixed bg-white lg:top-0 lg:w-[100px] lg:h-[50px]"
+            />
+          </a>
+        </div>
 
         <Navbar isToggle={isToggle} />
       </div>
