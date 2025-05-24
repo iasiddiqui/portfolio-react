@@ -73,7 +73,7 @@ const Header = () => {
 
 <div id="logo" className="py-3">
   <img
-    src="public\logo\logo.png" // <-- replace with your actual path
+    src="public/logo/logo.png" 
     alt="Ishan Logo"
     className="h-10 w-auto lg:fixed bg-white lg:top-0 lg:w-[100px] lg:h-[50px]"
   />
