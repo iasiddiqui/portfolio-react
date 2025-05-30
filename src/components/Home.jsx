@@ -99,7 +99,7 @@ const Home = () => {
             seamless user experience.
           </p>
           <button
-            onClick={() => window.open("/public/pdf/ishan.pdf", "_blank")}
+            onClick={() => window.open("/pdf/ishan.pdf", "_blank")}
             className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-6 py-3 rounded-lg shadow-md font-semibold mt-7 hover:scale-105 hover:shadow-lg transition-all duration-300"
           >
             Download Resume
